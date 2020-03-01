@@ -98,10 +98,25 @@ def Decrypt(text, Kunci):
 CARA MENGGUNAKAN :
 
 1. Gunakan Fungsi Encrypt(text, Kunci) untuk mengacak teks anda, 
-	paramater 'text' bisa di ambil melalui fungsi InputUser(user), atau bisa diisi dengan manual (STRING),
+	paramater 'text' harus di ambil melalui fungsi InputUser(user),
 	parameter 'Kunci' bisa di ambil melalui fungsi KunciUser(kunci), atau bisa diisi dengan manul (INTEGER).
 
-2. Gunakan Fungsi Decrypt(text, Kunci) untuk mengubah text anda ke text normal
+2. Gunakan Fungsi Decrypt(text, Kunci) untuk mengubah text anda ke text normal,
+	parameter 'text' di fungsi Decrypt harus huruf kecil, dan tidak bisa huruf besar
+
+
+NB: Hasil output akan menjadi huruf kecil semua
 '''
 
-file1 = Encrypt('Farhan Febryan', 8)
+# Contoh Penggunaan
+# Membuat Variabel file1 dan memberi nilai sebagai berikut, jadi file1 akan huruf yang sudah di acak
+file1 = Encrypt(InputUser('Farhan Febryan'), 8)
+
+# print file1 untuk melihat huruf yang di acak
+print(file1)
+
+# Membuat variabel file2 dan diberikan fungsi Decrypt, file1 yang di dalam parameter akan di ubah ke kondisi normal
+file2 = Decrypt(file1, 8)
+
+# print untuk lihat text asli
+print(file2)

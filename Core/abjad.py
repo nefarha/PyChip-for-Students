@@ -31,7 +31,7 @@ abjad1 = {
 
 #list abjad yang akan diambil untuk decrypt
 abjad2 = {
-	0 : '',
+	0 : ' ',
 	1 : 'a',
 	2 : 'b',
 	3 : 'c',
