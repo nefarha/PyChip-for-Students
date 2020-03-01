@@ -91,3 +91,17 @@ def Decrypt(text, Kunci):
 		HasilDecrypt += abjad2.get(decr)
 
 	return HasilDecrypt
+
+
+
+'''
+CARA MENGGUNAKAN :
+
+1. Gunakan Fungsi Encrypt(text, Kunci) untuk mengacak teks anda, 
+	paramater 'text' bisa di ambil melalui fungsi InputUser(user), atau bisa diisi dengan manual (STRING),
+	parameter 'Kunci' bisa di ambil melalui fungsi KunciUser(kunci), atau bisa diisi dengan manul (INTEGER).
+
+2. Gunakan Fungsi Decrypt(text, Kunci) untuk mengubah text anda ke text normal
+'''
+
+file1 = Encrypt('Farhan Febryan', 8)
